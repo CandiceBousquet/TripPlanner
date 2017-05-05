@@ -475,6 +475,9 @@ footer {
   top: 0;
   width: 100%; }
 
+#rightSection {
+  float: right; }
+
 body h1 {
   color: black; }
 

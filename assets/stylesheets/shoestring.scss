@@ -1,104 +1,110 @@
 @import "normalize";
 @import "modern-business";
-
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 @import "navbar";
+#rightSection {
+    float: right;
+}
 
 body {
-  h1 {
-    color: black;
-  }
+    h1 {
+        color: black;
+    }
 }
 
 ol {
-	margin: none;
-	padding: 10px;
-	list-style: none;
-	background-color: #e6dde6;
+    margin: none;
+    padding: 10px;
+    list-style: none;
+    background-color: #e6dde6;
 }
 
 .active {
-	color: gray;
+    color: gray;
 }
-li{
-	display: inline;
+
+li {
+    display: inline;
 }
-small{
-	color:grey;
+
+small {
+    color: grey;
 }
-.lead div{
-	padding: 0px;
+
+.lead div {
+    padding: 0px;
 }
-.section{
-	padding: 0px;
-} 
+
+.section {
+    padding: 0px;
+}
+
 .container {
-	margin-left: auto;
-	margin-right: auto;
-	clear: both;
-	overflow:hidden;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+    overflow: hidden;
 }
 
-.row{
-	padding: 15px;
-	clear:both;
-	overflow:hidden;
+.row {
+    padding: 15px;
+    clear: both;
+    overflow: hidden;
 }
 
-.section-colored{
-	clear:left;
+.section-colored {
+    clear: left;
 }
 
 .lead {
-	padding: none;
+    padding: none;
 }
 
-.text-center{
-	text-align: center;
+.text-center {
+    text-align: center;
 }
 
 .form-group {
-	display: block;
+    display: block;
 }
-.img-responsive{
-	float:left;
+
+.img-responsive {
+    float: left;
 }
 
 label {
-	float: left;
-	clear: left;
-	
+    float: left;
+    clear: left;
 }
+
 input {
-	width: 100%;
-	float: left;
-	clear: left;
-	
+    width: 100%;
+    float: left;
+    clear: left;
 }
 
 textarea {
-	width: 100%;
-	float: left;
-	clear: left;
-	
+    width: 100%;
+    float: left;
+    clear: left;
 }
 
 button {
-
     background-color: #39a9e0;
-    color:white;
-    border:none;
+    color: white;
+    border: none;
 }
 
 a {
-	text-decoration: none;
-	color: #39a9e0;
+    text-decoration: none;
+    color: #39a9e0;
 }
+
 img {
-	width: 100%;
+    width: 100%;
 }
 
 @import 'media-queries';
