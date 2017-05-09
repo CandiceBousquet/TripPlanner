@@ -1,0 +1,77 @@
+{% extends 'layout.html' %} {% block title %}Your Trip{% endblock %} {% block content %}
+<div id="app" class="clearfix container-fluid">
+    <!--<h1>Let's plan out trip!!!</h1>-->
+
+    <div class="row">
+
+        <div class="col-md-8 col-lg-9">
+            <div id="map" class="panel panel-default">
+                <!--<div class="panel-body">
+                    Basic panel example
+                </div>-->
+            </div>
+        </div>
+        <div id="rightSection" class="col-md-4 col-lg-3">
+            <div id="searchFields" class="panel panel-primary">
+                <label for="hotel ">Hotels</label>
+                <select name="hotel" id="hotel" class="form-control">
+                    {% for hotel in hotels %}
+                    <option>{{hotel.name}}</option>
+                    {% endfor %}
+                </select>
+                <label for="restaurant ">Restaurants</label>
+                <select name="restaurant " id="restaurant" class="form-control ">
+                    {% for restaurant in restaurants %}
+                    <option>{{restaurant.name}}</option>
+                    {% endfor %}
+                </select>
+                <label for="activity ">Activities</label>
+                <select name="activity " id="activity " class="form-control ">
+                    {% for activity in activities %}
+                    <option>{{activity.name}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div id="dayDesc" class="">
+                <!--<label for="dayDesc">Day 1</label>-->
+                <h3>Day 1</h3>
+            </div>
+            <!--<div id="daysList" class=" ">
+                <label for="daysList">Days</label>
+            </div>-->
+
+            <div id="dayDetails" class="panel panel-default">
+                <div id="dayList" class="">
+                    <div class="btn-group" role="group" aria-label="...">
+                        <button type="button" class="btn btn-default">1</button>
+                        <button type="button" class="btn btn-default">2</button>
+                        <button type="button" class="btn btn-default">3</button>
+                        <button type="button" class="btn btn-default">+</button>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="">My Hotel
+                        <div>[[xxxxxxxxxxxxxxxxx]]
+                            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-trash"></span></button>
+                        </div>
+                    </div>
+                    <div class="">My Restaurnts
+                        <div>[[xxxxxxxxxxxxxxxxx]]
+                            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-trash"></span></button>
+
+                        </div>
+                    </div>
+                    <div class="">My Activities
+                        <div>[[xxxxxxxxxxxxxxxxx]]
+                            <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-trash"></span></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

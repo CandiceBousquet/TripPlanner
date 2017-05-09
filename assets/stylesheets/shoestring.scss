@@ -1,110 +1,40 @@
-@import "normalize";
-@import "modern-business";
-* {
-    box-sizing: border-box;
-}
-
-@import "navbar";
-#rightSection {
-    float: right;
-}
-
+// #app {
+//     clear: both;
+// }
+// #map {
+//     // clear: both;
+//     // float: left:
+// }
+// #rightSection {
+//     // clear: both;
+//     // flo
+// }
 body {
-    h1 {
-        color: black;
-    }
+    padding-top: 60px;
 }
 
-ol {
-    margin: none;
-    padding: 10px;
-    list-style: none;
-    background-color: #e6dde6;
-}
-
-.active {
-    color: gray;
-}
-
-li {
-    display: inline;
-}
-
-small {
-    color: grey;
-}
-
-.lead div {
-    padding: 0px;
-}
-
-.section {
-    padding: 0px;
-}
-
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    clear: both;
-    overflow: hidden;
-}
-
-.row {
-    padding: 15px;
-    clear: both;
-    overflow: hidden;
-}
-
-.section-colored {
-    clear: left;
-}
-
-.lead {
-    padding: none;
-}
-
-.text-center {
+.starter-template {
+    padding: 40px 15px;
     text-align: center;
 }
 
-.form-group {
-    display: block;
+.row {
+    overflow: inherit;
 }
 
-.img-responsive {
-    float: left;
+.panel {
+    clear: both;
+    padding: 1em;
 }
 
-label {
-    float: left;
-    clear: left;
+// #searchFields {
+//     background-color: lightseagreen;
+// }
+#map {
+    height: 70vh;
 }
 
-input {
-    width: 100%;
-    float: left;
-    clear: left;
-}
-
-textarea {
-    width: 100%;
-    float: left;
-    clear: left;
-}
-
-button {
-    background-color: #39a9e0;
-    color: white;
-    border: none;
-}
-
-a {
-    text-decoration: none;
-    color: #39a9e0;
-}
-
-img {
-    width: 100%;
-}
-
-@import 'media-queries';
+// select {
+//     /* only works in webkit-compatible browsers */
+//     -webkit-appearance: menulist-button;
+// }

@@ -14,9 +14,18 @@ router.get("/", function(req, res, next) {
         .then(function(resultArr) {
             let i = { hotels: resultArr[0], restaurants: resultArr[1], activities: resultArr[2] };
             console.log(resultArr);
-            res.render("home", i);
+            res.render("index", i);
         })
         .catch(next);
 });
+
+router.get("/contact", function(req, res, next) {
+    res.render("contact", {});
+})
+
+
+
+
+
 
 module.exports = router;
